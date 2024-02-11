@@ -1,10 +1,20 @@
 spring:
   application:
     name: USERPROFILE-SERVICE
-#  data:
-#    mongodb:
-#      uri: mongodb://localhost:27017
-#      database: UserProfileService
+  data:
+    mongodb:
+      uri: mongodb+srv://admin:admin@userprofile.sbslc8y.mongodb.net/?retryWrites=true&w=majority
+      database: UserProfileService
+
+  rabbitmq:
+    host: woodpecker-01.rmq.cloudamqp.com
+    port: 5671
+    username: ilhxwmxw
+    password: mYwPoe6Lb28HfHM07UgyRz5LMZV82ftA
+    virtual-host: ilhxwmxw
+    ssl:
+      enabled: true
+
 
 
 #  kafka:
